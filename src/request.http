@@ -1,0 +1,27 @@
+GET http://localhost:3500/api/v1/employees HTTP/1.1
+###
+GET http://localhost:3500/api/v1/employees/1 HTTP/1.1
+###
+POST http://localhost:3500/api/v1/employees HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Charly",
+    "lastname": "Centeno",
+    "salary": 7750
+}
+
+###
+PATCH  http://localhost:3500/api/v1/employees/10 HTTP/1.1
+content-Type: application/json
+
+{
+    "name": "Gadqw2SRR",
+    "lastname": "CeASD123123ASteno",
+    "salary": 1111
+}
+
+###
+DELETE http://localhost:3500/api/v1/employees/11 HTTP/1.1
+
+
